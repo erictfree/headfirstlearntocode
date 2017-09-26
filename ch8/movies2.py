@@ -29,7 +29,7 @@ for name in movies:
         print(movie['name'], '(' + movie['rating'] + ')',  movie['year'])
 
 print('\nHead First Movie Staff Pick')
-print('-----------------------------')
-movie = movies['Viking Women and the Sea Serpent']
+print('---------------------------')
+movie = movies['I Was a Teenage Werewolf']
 print(movie['name'], '(' + movie['rating'] + ')',  movie['year'])
 
