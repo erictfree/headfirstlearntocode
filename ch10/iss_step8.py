@@ -1,13 +1,26 @@
 import requests, json, turtle
 
-def setup(craft, window):
+iss = turtle.Turtle()
+
+def setup(window):
+    global iss
+
     window.setup(1000,500)
     window.bgpic('earth.gif')
     window.setworldcoordinates(-180, -90, 180, 90)
     turtle.register_shape("iss.gif")
-    craft.shape("iss.gif")
+    iss.shape("iss.gif")
 
-def track_craft(craft):
+def move_iss(lat, long):
+    global iss
+
+    iss.hideturtle()
+    iss.penup()
+    iss.goto(long, lat)
+    iss.pendown()
+    iss.showturtle()
+
+def track_iss():
     url = 'http://api.open-notify.org/iss-now.json'
     response = requests.get(url)
     if (response.status_code == 200):
@@ -15,20 +28,18 @@ def track_craft(craft):
         position = response_dictionary['iss_position']
         lat = float(position['latitude'])
         long = float(position['longitude'])
-        craft.hideturtle()
-        craft.penup()
-        craft.goto(long, lat)
-        craft.pendown()
-        craft.showturtle()
+        move_iss(lat, long)
     else:
         print("Houston we have a problem:", response.status_code)
+    widget = turtle.getcanvas()
+    widget.after(5000, track_iss)
 
 def main():
-    iss = turtle.Turtle()
+    global iss
     screen = turtle.Screen()
-    setup(iss, screen)
-    track_craft(iss)
+    setup(screen)
+    track_iss()
 
 if __name__ == "__main__":
     main()
-    turtle.mainloop()
+    turtle.mainloop()                     

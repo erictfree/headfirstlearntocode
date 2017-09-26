@@ -1,17 +1,20 @@
-import requests, json
+import requests, json, turtle
 
-def track_iss():
-    url = 'http://api.open-notify.org/iss-now.json'
+screen = turtle.Screen()
+screen.setup(1000,500)
+screen.bgpic('earth.gif')
+screen.setworldcoordinates(-180, -90, 180, 90)
 
-    response = requests.get(url)
+url = 'http://api.open-notify.org/iss-now.json'
 
-    if (response.status_code == 200):
-        response_dictionary = json.loads(response.text)
-        position = response_dictionary['iss_position']
-        print('International Space Station at ' +       
-            str(position['latitude']) + ', ' + str(position['longitude']))
-    else:
-        print("Houston we have a problem:", response.status_code)
+response = requests.get(url)
 
-if __name__ == '__main__':
-    track_iss()
+if (response.status_code == 200):
+    response_dictionary = json.loads(response.text)
+    position = response_dictionary['iss_position']
+    print('International Space Station at ' +       
+        position['latitude'] + ', ' + position['longitude'])
+else:
+    print("Houston we have a problem:", response.status_code)
+
+turtle.mainloop()
