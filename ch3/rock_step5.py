@@ -25,4 +25,3 @@ else:
     winner = 'User'
 
 print('The', winner, 'wins!')
-

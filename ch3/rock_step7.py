@@ -1,6 +1,6 @@
 import random 
 
-winner = "User"
+winner = ''
 
 random_choice = random.randint(0,2)
 
@@ -25,9 +25,10 @@ elif computer_choice == 'rock' and user_choice == 'scissors':
     winner = 'Computer'
 elif computer_choice == 'scissors' and user_choice == 'paper':
     winner = 'Computer'
+else:
+    winner = 'User'
 
 if winner == 'Tie':
     print('We both chose', computer_choice + ', play again.')
 else:
-    print(winner, 'won, I chose', computer_choice + '.')
-
+    print(winner, 'won. The computer chose', computer_choice + '.')
