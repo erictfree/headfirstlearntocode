@@ -9,5 +9,5 @@ elif random_choice == 1:
 else:
     computer_choice = 'scissors'
 
-user_choice = input('Rock, paper or scissors? ')
+user_choice = input('rock, paper or scissors? ')
 print('You chose', user_choice, 'and the computer chose', computer_choice)

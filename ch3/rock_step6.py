@@ -11,7 +11,7 @@ elif random_choice == 1:
 else:
     computer_choice = 'scissors'
 
-user_choice = input('Rock, paper or scissors? ')
+user_choice = input('rock, paper or scissors? ')
 
 if computer_choice == user_choice:
     winner = 'Tie'
