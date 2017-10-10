@@ -23,7 +23,7 @@ def count_syllables_in_word(word):
     """
     count = 0
 
-    endings = '.,;!?:'
+    endings = '.,;!?:' # these are the word terminals we care about
     last_char = word[-1]
 
     if last_char in endings: 
