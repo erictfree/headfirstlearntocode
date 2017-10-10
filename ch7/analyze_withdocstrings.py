@@ -67,7 +67,7 @@ def count_sentences(text):
     return count
 
 def output_results(score):
-    """This function takes a Flesh-Kincaid score and prints the 
+    """This function takes a Flesch-Kincaid score and prints the 
        corresponding reading level.
     """
     if score >= 90:
