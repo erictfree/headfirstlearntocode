@@ -1,7 +1,7 @@
 import turtle
 import random
 
-turtles = []
+turtles = list()
 
 class SuperTurtle(turtle.Turtle):
     def forward(self, distance):
