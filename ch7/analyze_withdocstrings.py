@@ -19,7 +19,7 @@ def count_syllables(words):
 def count_syllables_in_word(word):
     """This function takes a word in the form of a string
        and returns the number of syllables. Note this function is
-       a hueristic and may not be 100% accurate.
+       a heuristicand may not be 100% accurate.
     """
     count = 0
 
