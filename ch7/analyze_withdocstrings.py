@@ -54,7 +54,7 @@ def count_syllables_in_word(word):
     return count
 
 def count_sentences(text):
-    """This function counts the number of sentences in a sting of text
+    """This function counts the number of sentences in a string of text
        using period, semicolon, question mark and exclamation mark as 
        terminals.
     """
