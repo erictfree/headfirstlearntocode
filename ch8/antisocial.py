@@ -8,7 +8,7 @@ for name in users:
    user = users[name]
    friends = user['friends']
    if len(friends) < max:
-       least_social = name
+       most_anti_social = name
        max = len(friends)
 
-print('The least social is', name)
+print('The most anti-social is', most_anti_social)
