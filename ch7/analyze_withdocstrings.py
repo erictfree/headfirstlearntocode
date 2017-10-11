@@ -105,5 +105,5 @@ def compute_readability(text):
 
 if __name__ == "__main__":
     import ch1text
-    print('Testing Chapter1 Text:')
+    print('Chapter1 Text:')
     compute_readability(ch1text.text)

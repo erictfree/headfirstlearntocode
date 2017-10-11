@@ -33,7 +33,7 @@ def setup():
 def race():
     global turtles
     winner = False
-    finishline = 560
+    finishline = 590
 
     while not winner:
         for current_turtle in turtles:
