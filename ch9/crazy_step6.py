@@ -56,7 +56,7 @@ def main():
     else:
         filename = sys.argv[1]
         lib = make_crazy_lib(filename)
-        if (lib):
+        if (lib != None):
             save_crazy_lib('crazy_' + filename, lib)
 
 if __name__ == '__main__':
