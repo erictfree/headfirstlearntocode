@@ -14,11 +14,9 @@ def setup(window):
 def move_iss(lat, long):
     global iss
 
-    iss.hideturtle()
     iss.penup()
     iss.goto(long, lat)
     iss.pendown()
-    iss.showturtle()
 
 def track_iss():
     url = 'http://api.open-notify.org/iss-now.json'
