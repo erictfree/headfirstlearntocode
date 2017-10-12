@@ -52,7 +52,7 @@ def save_crazy_lib(filename, text):
 
 def main():
     if len(sys.argv) != 2:
-        print("crazy.pl <filename>")
+        print("crazy.py <filename>")
     else:
         filename = sys.argv[1]
         lib = make_crazy_lib(filename)
