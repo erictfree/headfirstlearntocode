@@ -13,6 +13,8 @@ def make_crazy_lib(filename):
 placeholders = ['NOUN', 'ADJECTIVE', 'VERB_ING', 'VERB']
 
 def process_line(line):
+    global placeholders
+
     processed_line = ''
 
     words = line.split()
