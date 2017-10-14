@@ -49,7 +49,7 @@ def update():
 def draw_cell(row, col, color):
     global grid_view, cell_size
 
-    if (color == 'black'):
+    if color == 'black':
         outline = 'grey'
     else:
         outline = 'white'

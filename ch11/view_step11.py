@@ -76,7 +76,7 @@ def clear_handler(event):
    update()
 
 def grid_handler(event):
-    global grid_view, cellsize
+    global grid_view, cell_size
 
     x = int(event.x / cell_size)
     y = int(event.y / cell_size)
@@ -104,7 +104,7 @@ def update():
 def draw_cell(row, col, color):
     global grid_view, cell_size
 
-    if (color == 'black'):
+    if color == 'black':
         outline = 'grey'
     else:
         outline = 'white'
