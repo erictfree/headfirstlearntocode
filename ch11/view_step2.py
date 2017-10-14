@@ -27,8 +27,8 @@ def setup():
 
     grid_view.pack()
     start_button.pack()
-    clear_button.pack()
     option.pack()
+    clear_button.pack()
 
 if __name__ == '__main__':
     setup()
