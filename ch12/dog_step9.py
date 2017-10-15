@@ -46,7 +46,7 @@ class FrisbeeDog(Dog):
         self.frisbee = None
 
     def bark(self):
-        if self.frisbee:
+        if self.frisbee != None:
             print(self.name,
                     'says, "I can\'t bark, I have a frisbee in my mouth"')
         else:
@@ -57,7 +57,7 @@ class FrisbeeDog(Dog):
         print(self.name, 'caught a', frisbee.color, 'frisbee')
 
     def give(self):
-        if self.frisbee:
+        if self.frisbee != None:
             frisbee = self.frisbee
             self.frisbee = None
             print(self.name, 'gives back', frisbee.color, 'frisbee')
@@ -68,7 +68,7 @@ class FrisbeeDog(Dog):
 
     def __str__(self):
         str = "I'm a dog named " + self.name
-        if self.frisbee:
+        if self.frisbee != None:
             str = str + ' and I have a frisbee'
         return str
 
