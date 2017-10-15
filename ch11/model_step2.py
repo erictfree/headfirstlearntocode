@@ -5,7 +5,7 @@ width = 100
 
 def randomize(grid, width, height):
    for i in range(0, height):
-       for j in range (0, width):
+       for j in range(0, width):
            grid[i][j] = random.randint(0,1)
 
 grid_model = [0] * height
@@ -20,7 +20,7 @@ def next_gen():
    global grid_model, next_grid_model
 
    for i in range(0, height):
-       for j in range (0, width):
+       for j in range(0, width):
            cell = 0
            print('Checking cell', i, j)
            count = count_neighbors(grid_model, i, j)

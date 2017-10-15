@@ -69,7 +69,7 @@ def clear_handler(event):
 
    is_running = False
    for i in range(0, model.height):
-       for j in range (0, model.width):
+       for j in range(0, model.width):
            model.grid_model[i][j] = 0
 
    start_button.configure(text='Start')
@@ -95,7 +95,7 @@ def update():
 
    model.next_gen()
    for i in range(0, model.height):
-       for j in range (0, model.width):
+       for j in range(0, model.width):
            if model.grid_model[i][j] == 1:
                 draw_cell(i, j, 'black')
    if (is_running):

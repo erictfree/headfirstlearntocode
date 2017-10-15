@@ -5,7 +5,7 @@ width = 100
 
 def randomize(grid, width, height):
    for i in range(0, height):
-       for j in range (0, width):
+       for j in range(0, width):
            grid[i][j] = random.randint(0,1)
 
 
@@ -19,7 +19,7 @@ def next_gen():
    global grid_model, next_grid_model
 
    for i in range(0, height):
-       for j in range (0, width):
+       for j in range(0, width):
            cell = 0
            count = count_neighbors(grid_model, i, j)
 
@@ -89,7 +89,7 @@ def load_pattern(pattern, x_offset=0, y_offset=0):
     global grid_model
 
     for i in range(0, height):
-        for j in range (0, width):
+        for j in range(0, width):
             grid_model[i][j] = 0
 
     j = y_offset

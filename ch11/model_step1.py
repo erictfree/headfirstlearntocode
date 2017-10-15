@@ -9,7 +9,7 @@ def next_gen():
    global grid_model
 
    for i in range(0, height):
-       for j in range (0, width):
+       for j in range(0, width):
            cell = 0
            print('Checking cell', i, j)
            count = count_neighbors(grid_model, i, j)
