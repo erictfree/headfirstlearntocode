@@ -31,7 +31,7 @@ def setup():
     clear_button.grid(row=1, column=2, sticky=E, padx=20, pady=20)
 
 def update():
-   global grid_model, grid_view
+   global grid_view
 
    grid_view.delete(ALL)
 

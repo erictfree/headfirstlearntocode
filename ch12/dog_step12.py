@@ -120,7 +120,7 @@ class Hotel:
             print('Sorry,', walker.name, ' is not a Dog Walker')
 
     def walking_service(self):
-        if self.walker:
+        if self.walker != None:
             self.walker.walk_the_dogs(self.kennel)
 
 class Cat():

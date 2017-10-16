@@ -70,7 +70,7 @@ def grid_handler(event):
         draw_cell(x, y, 'black')
 
 def update():
-   global grid_model, grid_view, root, is_running
+   global grid_view, root, is_running
 
    grid_view.delete(ALL)
 

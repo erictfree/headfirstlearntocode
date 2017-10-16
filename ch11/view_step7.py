@@ -56,7 +56,7 @@ def clear_handler(event):
    update()
 
 def update():
-   global grid_model, grid_view
+   global grid_view
 
    grid_view.delete(ALL)
 
@@ -82,5 +82,6 @@ def draw_cell(row, col, color):
 
 if __name__ == '__main__':
     setup()
+    model.randomize(model.grid_model, model.width, model.height)
     update()
     mainloop()
