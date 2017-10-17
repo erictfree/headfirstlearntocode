@@ -30,7 +30,7 @@ def track_iss():
         long = float(position['longitude'])
         move_iss(lat, long)
     else:
-        print("Houston we have a problem:", response.status_code)
+        print("Houston, we have a problem:", response.status_code)
 
 def main():
     global iss
