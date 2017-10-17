@@ -32,7 +32,7 @@ class ServiceDog(Dog):
         else:
             Dog.bark(self)
 
-class Frisbee():
+class Frisbee:
     def __init__(self, color):
         self.color = color
 

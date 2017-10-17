@@ -12,7 +12,7 @@ class PalindromeString(str):
 
 word = PalindromeString('radar')
 word2 = PalindromeString('rader')
-print(word, 'length is', len(word), ' and uppercase is', word.upper())
+print(word, 'length is', len(word), 'and uppercase is', word.upper())
 print(word, word.is_palindrome())
-print(word2, 'length is', len(word2), ' and uppercase is', word2.upper())
+print(word2, 'length is', len(word2), 'and uppercase is', word2.upper())
 print(word2, word2.is_palindrome())
