@@ -76,7 +76,7 @@ def clear_handler(event):
    update()
 
 def grid_handler(event):
-    global grid_view, cellsize
+    global grid_view, cell_size
 
     x = int(event.x / cell_size)
     y = int(event.y / cell_size)
@@ -89,7 +89,7 @@ def grid_handler(event):
         draw_cell(x, y, 'black')
 
 def update():
-   global grid_model, grid_view, root, is_running
+   global grid_view, root, is_running
 
    grid_view.delete(ALL)
 
@@ -104,7 +104,7 @@ def update():
 def draw_cell(row, col, color):
     global grid_view, cell_size
 
-    if (color == 'black'):
+    if color == 'black':
         outline = 'grey'
     else:
         outline = 'white'

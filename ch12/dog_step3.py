@@ -11,8 +11,8 @@ class Dog:
             print(self.name, 'says "woof woof"')
 
     def human_years(self):
-        human_age = self.age * 7
-        return human_age
+        years = self.age * 7
+        return years 
 
 def print_dog(dog):
     print(dog.name + "'s", 'age is', dog.age, 
