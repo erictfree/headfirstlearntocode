@@ -75,8 +75,6 @@ class FrisbeeDog(Dog):
 class Hotel:
     def __init__(self, name):
         self.name = name
-        self.kennel_names = []
-        self.kennel_dogs = []
         self.kennel = {}
 
     def check_in(self, dog):
